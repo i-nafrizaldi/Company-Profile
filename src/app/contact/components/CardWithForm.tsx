@@ -22,7 +22,7 @@ import { Textarea } from "@/components/ui/textarea";
 
 export function CardWithForm() {
   return (
-    <Card className="w-[700px]">
+    <Card className="md:w-[700px] mb-4">
       <CardHeader>
         <CardTitle>Get in Touch with Us</CardTitle>
         <CardDescription>

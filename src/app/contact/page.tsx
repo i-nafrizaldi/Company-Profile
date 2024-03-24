@@ -8,7 +8,7 @@ const Contact = () => {
       <div className=" items-center space-y-2">
         <div className="relative h-[600px] w-full overflow-hidden ">
           <Image
-            src="https://images.unsplash.com/photo-1583202075405-8d68e5ba459b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="https://images.unsplash.com/photo-1517429128955-67ff5c1e29da?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Layonair Image"
             fill
             className="object-cover"
@@ -20,9 +20,9 @@ const Contact = () => {
         </div>
       </div>
       <div className="container mx-auto p-5 py-8">
-        <div className="justify center grid grid-cols-3">
+        <div className="justify center grid md:grid-cols-3 grid-row">
           {/* Left */}
-          <div className="col-span-2">
+          <div className="md:col-span-2">
             <CardWithForm />
           </div>
 
