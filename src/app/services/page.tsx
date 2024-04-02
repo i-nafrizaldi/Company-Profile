@@ -14,6 +14,8 @@ const Services = () => {
             alt="Layonair Image"
             fill
             className="object-cover"
+            loading="lazy"
+              quality={70}
           />
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute inset-x-0 bottom-20 flex flex-col items-center justify-center gap-4 text-center text-white">
