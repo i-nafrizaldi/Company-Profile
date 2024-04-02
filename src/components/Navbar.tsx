@@ -1,5 +1,5 @@
 import Image from "next/image";
-import layonaircrop from "../../public/Layoncrop.png";
+
 import { Button } from "./ui/button";
 import { Menu } from "lucide-react";
 import Link from "next/link";
@@ -14,15 +14,17 @@ import {
 
 const Navbar = () => {
   return (
-    <div className="container sticky top-0 z-10 mx-auto bg-white">
+    <div className=" mx- sticky top-0 z-10 px-6 bg-white">
       <div className="flex items-center justify-between py-1 md:py-2">
         <div className="flex items-center gap-3">
           <Link href="/" className="relative flex h-14 w-40 md:h-14 md:w-60 ">
             <Image
-              src={layonaircrop}
+              src="/Layoncrop.png"
               fill
               alt=""
               className="cursor-pointer object-scale-down md:object-cover "
+              loading="lazy"
+              quality={70}
             />
           </Link>
           <div className="hidden pt-9 md:block">

@@ -13,6 +13,8 @@ const ContentA = () => {
           alt="cargo services"
           fill
           className="object-cover"
+          loading="lazy"
+              quality={70}
         />
       </div>
       <div className="mx-auto w-full space-y-8 md:w-[500px]">

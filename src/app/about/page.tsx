@@ -6,25 +6,29 @@ const About = () => {
   return (
     <div className="mt-4">
       <div className="items-center space-y-2">
-        <div className="relative h-[300px] md:h-[600px] w-full overflow-hidden ">
+        <div className="relative h-[300px] w-full overflow-hidden md:h-[600px] ">
           <Image
             src="https://images.unsplash.com/photo-1583202075405-8d68e5ba459b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Layonair Image"
             fill
             className="object-cover"
+            loading="lazy"
+            quality={70}
           />
           <div className="absolute inset-0 bg-black opacity-50"></div>
-          <div className="absolute inset-x-0 bottom-20 md:bottom-1/4 flex items-center justify-center text-3xl md:text-5xl font-black text-white">
+          <div className="absolute inset-x-0 bottom-20 flex items-center justify-center text-3xl font-black text-white md:bottom-1/4 md:text-5xl">
             About Us
           </div>
         </div>
       </div>
       <Separator />
       <section className="py-5">
-        <div className="mx-auto w-full md:w-[900px] items-center text-center drop-shadow-xl">
+        <div className="mx-auto w-full items-center text-center drop-shadow-xl md:w-[900px]">
           <Card>
             <CardHeader>
-              <CardTitle className="text-2xl md:text-5xl font-bold">Our Story</CardTitle>
+              <CardTitle className="text-2xl font-bold md:text-5xl">
+                Our Story
+              </CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-sm md:text-base">
@@ -56,28 +60,34 @@ const About = () => {
         </div>
       </section>
       <section className="my-5 flex flex-col gap-4 rounded-lg bg-white py-4">
-        <div className="my-5 mx-auto flex w-full md:w-[800px] flex-row rounded-l-full bg-[#ea1b28] p-5 text-white shadow-lg drop-shadow-lg">
-          <div className="mb-3 text-xl md:text-5xl font-bold">Our Vision</div>
+        <div className="mx-auto my-5 flex w-full flex-row rounded-l-full bg-[#ea1b28] p-5 text-white shadow-lg drop-shadow-lg md:w-[800px]">
+          <div className="mb-3 text-xl font-bold md:text-5xl">Our Vision</div>
           <div className="my-auto text-center italic">
             "To become a leading pioneer in the aviation industry, providing
             unparalleled air travel experiences through innovation, punctuality,
             and superior service for every customer."
           </div>
         </div>
-        <div className="my-5 mx-auto flex w-full md:w-[800px] flex-row-reverse gap-2 rounded-r-full bg-[#ea1b28] p-5 text-white shadow-lg drop-shadow-lg">
-          <div className="my-auto text-right text-xl md:text-5xl font-bold">
+        <div className="mx-auto my-5 flex w-full flex-row-reverse gap-2 rounded-r-full bg-[#ea1b28] p-5 text-white shadow-lg drop-shadow-lg md:w-[800px]">
+          <div className="my-auto text-right text-xl font-bold md:text-5xl">
             Our Mission
           </div>
           <div className="my-auto text-center italic">
-            “Strengthening business fundamental through strong revenue growth, cost leadership implementation, organization effectiveness and group synergy reinforcement while focusing on high standard of safety and customer-oriented services delivered by professional & passionate employees”
+            “Strengthening business fundamental through strong revenue growth,
+            cost leadership implementation, organization effectiveness and group
+            synergy reinforcement while focusing on high standard of safety and
+            customer-oriented services delivered by professional & passionate
+            employees”
           </div>
         </div>
       </section>
       <section className="py-5">
-        <div className="mx-auto w-full md:w-[900px] items-center text-center drop-shadow-xl">
+        <div className="mx-auto w-full items-center text-center drop-shadow-xl md:w-[900px]">
           <Card>
             <CardHeader>
-              <CardTitle className="text-2xl md:text-5xl font-bold">Our Culture</CardTitle>
+              <CardTitle className="text-2xl font-bold md:text-5xl">
+                Our Culture
+              </CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-sm md:text-base">
